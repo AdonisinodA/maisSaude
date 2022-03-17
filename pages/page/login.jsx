@@ -19,7 +19,6 @@ import {
 import Link from "next/link";
 import * as React from "react";
 import { Logo } from "../components/Logo";
-import { OAuthButtonGroup } from "../components/OAuthButtonGroup";
 import { PasswordField } from "../components/PasswordField";
 
 export const App = () => (

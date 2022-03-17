@@ -1,5 +1,9 @@
 import { Box } from "@chakra-ui/react";
-
+import Header from "../components/header";
 export default function Dashboard() {
-  return <Box>ola mundo</Box>;
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 }
