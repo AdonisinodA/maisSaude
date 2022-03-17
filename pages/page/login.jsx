@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import {
   Box,
   Button,
@@ -14,6 +15,8 @@ import {
   useBreakpointValue,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+import Link from "next/link";
 import * as React from "react";
 import { Logo } from "../components/Logo";
 import { OAuthButtonGroup } from "../components/OAuthButtonGroup";
@@ -87,22 +90,12 @@ export const App = () => (
             </FormControl>
             <PasswordField />
           </Stack>
-          <HStack justify="space-between">
-            <Checkbox defaultIsChecked>Remember me</Checkbox>
-            <Button variant="link" colorScheme="red" size="sm">
-              Forgot password?
-            </Button>
-          </HStack>
+
           <Stack spacing="6">
-            <Button variant="primary">Sign in</Button>
-            <HStack>
-              <Divider />
-              <Text fontSize="sm" whiteSpace="nowrap" color="muted">
-                or continue with
-              </Text>
-              <Divider />
-            </HStack>
-            <OAuthButtonGroup />
+            <Link href="/page/dashboard">
+              <Button colorScheme="teal">Entrar</Button>
+            </Link>
+            ;
           </Stack>
         </Stack>
       </Box>

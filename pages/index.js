@@ -1,5 +1,5 @@
-import { App } from "./pages/login";
-import { Padrao } from "./pages/padrao";
+import { App } from "./page/login";
+import { Padrao } from "./page/padrao";
 export default function Home() {
   return (
     <Padrao>
